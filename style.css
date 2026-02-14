@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  overflow: hidden;
+  cursor: none;
+  background: black;
+  color: white;
+}
+
+.cursor {
+  width: 18px;
+  height: 18px;
+  background: #ff4d6d;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px #ff4d6d;
+  z-index: 1000;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 1.2s ease;
+  text-align: center;
+  padding: 30px;
+}
+
+#slide1 {
+  background: linear-gradient(to right, #1a1a1a, #2b2b2b);
+}
+
+#slide2 {
+  background: black;
+  transform: translateY(100%);
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 28px;
+  border: none;
+  font-size: 16px;
+  border-radius: 30px;
+  margin: 10px;
+  transition: 0.3s ease;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#yesBtn:hover {
+  transform: scale(1.1);
+}
+
+#noBtn {
+  background: white;
+  color: black;
+  position: absolute;
+}
+
+p {
+  max-width: 700px;
+  line-height: 1.8;
+  font-size: 18px;
+}
